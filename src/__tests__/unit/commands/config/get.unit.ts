@@ -33,7 +33,7 @@ describe('config:get', () => {
     .command(['config:get'])
     .it('lists all configurations', ctx => {
       expect(iteratorSpy).toHaveBeenCalled();
-      expect(ctx.stdout).toContain('key1=value1');
-      expect(ctx.stdout).toContain('key2=value2');
+      expect(ctx.stdout).toContain('key1 = value1');
+      expect(ctx.stdout).toContain('key2 = value2');
     });
 });
