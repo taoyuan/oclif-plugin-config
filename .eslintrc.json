@@ -1,0 +1,16 @@
+{
+  "extends": [
+    "@nutol/eslint-config/eslintrc.js",
+    "plugin:prettier/recommended",
+    "oclif",
+    "oclif-typescript"
+  ],
+  "plugins": ["prettier"],
+  "overrides": [
+    {
+      "files": ["**/*.ts"],
+      "rules": {}
+    }
+  ]
+}
+
