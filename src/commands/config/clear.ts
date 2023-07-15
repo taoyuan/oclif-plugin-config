@@ -1,12 +1,13 @@
-import {BaseConfigCommand} from '../../config.base';
 import {ux} from '@oclif/core';
 import chalk from 'chalk';
+
+import {BaseConfigCommand} from '../../config.base';
 
 export default class ClearCommand extends BaseConfigCommand<typeof ClearCommand> {
   static description = 'clear configuration';
 
   async run() {
-    const {flags, conf} = this;
+    const {conf} = this;
 
     if (await ux.confirm(chalk.yellow('Are you sure to clear all configs?'))) {
       conf.clear();

@@ -1,7 +1,7 @@
-import {BaseConfigCommand} from '../../config.base';
-import * as os from 'os';
 import {Args} from '@oclif/core';
 import chalk from 'chalk';
+
+import {BaseConfigCommand} from '../../config.base';
 
 export default class GetCommand extends BaseConfigCommand<typeof GetCommand> {
   static description = 'get configuration';
@@ -21,7 +21,7 @@ export default class GetCommand extends BaseConfigCommand<typeof GetCommand> {
       }
     } else {
       this.print(chalk.cyan('➤'), `"user" config from ${conf.path}\n`);
-      for (let c of conf) {
+      for (const c of conf) {
         this.print(`${c[0]}=${c[1]}`);
       }
     }

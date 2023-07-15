@@ -1,8 +1,8 @@
-import {BaseConfigCommand} from '../../config.base';
-import * as os from 'os';
 import {Args, ux} from '@oclif/core';
 
-export class SetCommand extends BaseConfigCommand<typeof SetCommand> {
+import {BaseConfigCommand} from '../../config.base';
+
+export default class SetCommand extends BaseConfigCommand<typeof SetCommand> {
   static description = 'set configuration';
 
   static args = {
@@ -11,7 +11,7 @@ export class SetCommand extends BaseConfigCommand<typeof SetCommand> {
   };
 
   async run() {
-    const {args, flags, conf} = this;
+    const {args, conf} = this;
     const key = args.key;
     let value = args.value;
 

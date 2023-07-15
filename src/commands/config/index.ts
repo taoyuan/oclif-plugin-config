@@ -1,4 +1,5 @@
 import {run} from '@oclif/core';
+
 import {BaseConfigCommand} from '../../config.base';
 
 export default class ConfigCommand extends BaseConfigCommand<typeof ConfigCommand> {

@@ -1,14 +1,15 @@
-import {BaseConfigCommand} from '../../config.base';
 import chalk from 'chalk';
+
+import {BaseConfigCommand} from '../../config.base';
 
 export default class ListCommand extends BaseConfigCommand<typeof ListCommand> {
   static description = 'list configuration';
 
   async run() {
-    const {args, flags, conf} = this;
+    const {conf} = this;
 
     this.print(chalk.cyan('➤'), `"user" config from ${conf.path}\n`);
-    for (let c of conf) {
+    for (const c of conf) {
       this.print(`${c[0]}=${c[1]}`);
     }
   }

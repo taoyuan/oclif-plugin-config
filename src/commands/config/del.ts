@@ -1,5 +1,6 @@
-import {BaseConfigCommand} from '../../config.base';
 import {Args} from '@oclif/core';
+
+import {BaseConfigCommand} from '../../config.base';
 
 export default class DelCommand extends BaseConfigCommand<typeof DelCommand> {
   static description = 'delete configuration';
@@ -9,7 +10,7 @@ export default class DelCommand extends BaseConfigCommand<typeof DelCommand> {
   };
 
   async run() {
-    const {args, flags, conf} = this;
+    const {args, conf} = this;
     const key = args.key;
 
     conf.delete(key);

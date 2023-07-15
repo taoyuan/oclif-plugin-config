@@ -1,6 +1,5 @@
-import {test} from '@oclif/test';
 import {ux} from '@oclif/core';
-import chalk from 'chalk';
+import {test} from '@oclif/test';
 
 describe('config:clear', () => {
   test

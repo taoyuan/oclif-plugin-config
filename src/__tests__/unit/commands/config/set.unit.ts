@@ -1,6 +1,6 @@
+import {ux} from '@oclif/core';
 import {test} from '@oclif/test';
 import Conf from 'conf';
-import {ux} from '@oclif/core';
 
 describe('config:set', () => {
   let hasSpy: jest.SpyInstance;

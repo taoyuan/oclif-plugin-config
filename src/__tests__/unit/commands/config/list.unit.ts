@@ -1,6 +1,5 @@
 import {test} from '@oclif/test';
 import Conf from 'conf';
-import chalk from 'chalk';
 
 describe('config:list', () => {
   let iteratorSpy: jest.SpyInstance;
