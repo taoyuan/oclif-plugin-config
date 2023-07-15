@@ -38,7 +38,8 @@
     "@oclif/plugin-help": "^5",
     "@oclif/plugin-plugins": "^3.1.6",
     "chalk": "^4.1.2",
-    "conf": "^10.2.0"
+    "conf": "^10.2.0",
+    "js-yaml": "^4.1.0"
   },
   "devDependencies": {
     "@nutol/build": "^0.2.14",
@@ -48,6 +49,7 @@
     "@trivago/prettier-plugin-sort-imports": "^4.1.1",
     "@types/chai": "^4",
     "@types/jest": "^29.5.3",
+    "@types/js-yaml": "^4.0.5",
     "@types/micromatch": "^4.0.2",
     "@types/node": "^20.4.2",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
@@ -68,6 +70,7 @@
     "oclif": "^3",
     "prettier": "^2.8.8",
     "shx": "^0.3.4",
+    "tmp": "^0.2.1",
     "ts-jest": "^29.1.1",
     "tsx": "^3.12.7",
     "typescript": "^5.1.6"

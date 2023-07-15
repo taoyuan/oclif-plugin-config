@@ -77,9 +77,9 @@ value1
 
 ```bash
 $ <host-app> config get
-➤ "user" config from /path/to/conf
-key1 = value1
-key2 = value2
+➤ config from /path/to/conf
+key1: value1
+key2: value2
 ```
 
 ### list
@@ -90,9 +90,9 @@ Example:
 
 ```bash
 $ <host-app> config list
-➤ "user" config from /path/to/conf
-key1 = value1
-key2 = value2
+➤ config from /path/to/conf
+key1: value1
+key2: value2
 ```
 
 ### set
