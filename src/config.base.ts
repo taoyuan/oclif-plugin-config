@@ -12,8 +12,7 @@ export abstract class BaseConfigCommand<T extends typeof Command> extends Comman
 
   // define flags that can be inherited by any command that extends BaseCommand
   static baseFlags = {
-    project: Flags.string({char: 'p', description: 'project name'}),
-    name: Flags.string({char: 'n', description: 'config file name'}),
+    name: Flags.string({char: 'c', description: 'config file name'}),
     cwd: Flags.string({char: 'd', description: 'config file location'}),
     quiet: Flags.boolean({char: 'q', description: 'quiet'}),
   };
@@ -33,9 +32,13 @@ export abstract class BaseConfigCommand<T extends typeof Command> extends Comman
     this.flags = flags as Flags<T>;
     this.args = args as Args<T>;
 
+    const pjson = this.config.pjson as any;
+    const optsInConfig = pjson['oclif-plugin-config'] ?? pjson['plugin-config'] ?? pjson.config ?? {};
+
     this.conf = new Conf({
       projectSuffix: '',
-      projectName: flags.project ? flags.project : this.config.name,
+      projectName: this.config.name,
+      ...optsInConfig,
       ...(flags.name && {configName: flags.name}),
       ...(flags.cwd && {cwd: flags.cwd}),
     });
