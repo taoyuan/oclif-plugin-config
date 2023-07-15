@@ -12,7 +12,7 @@ export default class ListCommand extends BaseConfigCommand<typeof ListCommand> {
 
     this.print(chalk.cyan('➤'), `"user" config from ${conf.path}\n`);
     for (const c of conf) {
-      this.print(`${c[0]} = ${c[1]}`);
+      this.print(c[0], '=', typeof c[1] === 'string' ? c[1] : JSON.stringify(c[1]));
     }
   }
 }
