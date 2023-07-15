@@ -32,8 +32,14 @@ export abstract class BaseConfigCommand<T extends typeof Command> extends Comman
     this.flags = flags as Flags<T>;
     this.args = args as Args<T>;
 
-    const pjson = this.config.pjson as any;
-    const optsInConfig = pjson['oclif-plugin-config'] ?? pjson['plugin-config'] ?? pjson.config ?? {};
+    const cfg = this.config.pjson.oclif as any;
+    const optsInConfig =
+      cfg['oclif-plugin-config'] ??
+      cfg['oclifPluginConfig'] ??
+      cfg['plugin-config'] ??
+      cfg['pluginConfig'] ??
+      cfg.config ??
+      {};
 
     this.conf = new Conf({
       projectSuffix: '',
