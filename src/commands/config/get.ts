@@ -1,5 +1,4 @@
-import {Args} from '@oclif/core';
-import chalk from 'chalk';
+import {Args, run} from '@oclif/core';
 
 import {BaseConfigCommand} from '../../config.base';
 
@@ -20,10 +19,7 @@ export default class GetCommand extends BaseConfigCommand<typeof GetCommand> {
         this.print(value);
       }
     } else {
-      this.print(chalk.cyan('➤'), `"user" config from ${conf.path}\n`);
-      for (const c of conf) {
-        this.print(`${c[0]}=${c[1]}`);
-      }
+      await run(['config:list'], this.config);
     }
   }
 }
