@@ -12,6 +12,10 @@ export default class ListCommand extends BaseConfigCommand<typeof ListCommand> {
     const {conf} = this;
 
     this.print(chalk.cyan('➤'), `config from ${conf.path}\n`);
-    this.print(dump(conf.store));
+    const configs = [...conf].reduce((acc, [key, value]) => {
+      acc[key] = value;
+      return acc;
+    }, {} as Record<string, any>);
+    this.print(dump(configs));
   }
 }
