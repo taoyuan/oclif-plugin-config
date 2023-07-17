@@ -52,7 +52,7 @@
     "@nutol/build": "^0.2.14",
     "@nutol/eslint-config": "^0.2.9",
     "@nutol/ts-config": "^0.2.1",
-    "@oclif/test": "^2.3.28",
+    "@oclif/test": "^2.3.30",
     "@trivago/prettier-plugin-sort-imports": "^4.1.1",
     "@types/chai": "^4",
     "@types/jest": "^29.5.3",

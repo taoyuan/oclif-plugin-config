@@ -1568,7 +1568,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@oclif/core@npm:^2, @oclif/core@npm:^2.8.11, @oclif/core@npm:^2.8.4, @oclif/core@npm:^2.8.7":
+"@oclif/core@npm:^2, @oclif/core@npm:^2.8.11, @oclif/core@npm:^2.8.4, @oclif/core@npm:^2.8.7, @oclif/core@npm:^2.9.3":
   version: 2.9.3
   resolution: "@oclif/core@npm:2.9.3"
   dependencies:
@@ -1663,13 +1663,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@oclif/test@npm:^2.3.28":
-  version: 2.3.28
-  resolution: "@oclif/test@npm:2.3.28"
+"@oclif/test@npm:^2.3.30":
+  version: 2.3.30
+  resolution: "@oclif/test@npm:2.3.30"
   dependencies:
-    "@oclif/core": ^2.8.11
-    fancy-test: ^2.0.28
-  checksum: f7e81a7c8da16db5e4115c815cac13cf28caf858a7b507b1d8fd037602f3d2b7086c572bf52d0cdb99f018713f4983d514d85413725e135f3d3283f8c561ec16
+    "@oclif/core": ^2.9.3
+    fancy-test: ^2.0.29
+  checksum: ac5c5c550c151f234463d994a9906ca76a7c3f3b23b2dacaec81db0d73db91de4e07e97036fefabb036733d7cc43d2a5dadd4a37f451c8d34971623be6a8098b
   languageName: node
   linkType: hard
 
@@ -5156,9 +5156,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fancy-test@npm:^2.0.28":
-  version: 2.0.29
-  resolution: "fancy-test@npm:2.0.29"
+"fancy-test@npm:^2.0.29":
+  version: 2.0.30
+  resolution: "fancy-test@npm:2.0.30"
   dependencies:
     "@types/chai": "*"
     "@types/lodash": "*"
@@ -5166,9 +5166,9 @@ __metadata:
     "@types/sinon": "*"
     lodash: ^4.17.13
     mock-stdin: ^1.0.0
-    nock: ^13.3.1
+    nock: ^13.3.2
     stdout-stderr: ^0.1.9
-  checksum: 0b30d9ce6432f6813d3551f12e15c7451e337faa03395fce9b341638f8e7765fc76d7bdf530da9486530c7445e745f96d9f7b2d35e09a587b32169d8fd1dc32c
+  checksum: 15c4d21bdaa34a4cbc6d60268742c595f3e8e3eb081330c7e5df1f12be5c9d887b1a06107037258048d3079236de0c71733c9b8eb04b647950bb947ac97255be
   languageName: node
   linkType: hard
 
@@ -8608,7 +8608,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nock@npm:^13.3.1":
+"nock@npm:^13.3.2":
   version: 13.3.2
   resolution: "nock@npm:13.3.2"
   dependencies:
@@ -9231,7 +9231,7 @@ __metadata:
     "@oclif/core": ^2
     "@oclif/plugin-help": ^5
     "@oclif/plugin-plugins": ^3.1.6
-    "@oclif/test": ^2.3.28
+    "@oclif/test": ^2.3.30
     "@trivago/prettier-plugin-sort-imports": ^4.1.1
     "@types/chai": ^4
     "@types/jest": ^29.5.3
